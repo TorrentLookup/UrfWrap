@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>TL Style Doc - Torrent Details Example</title>
+
+    <!-- Metatags -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Links -->
+    <link href="../Styles/reset.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/auth-buttons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/icons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/main.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/normalize.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/responsive.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/meanmenu.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Minified/jquery-dropdown.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="" src="../Plugins/All/minified-all.js"></script>
+</head>
+<body class="bg-square site-left">
+    <nav class="list-top fixed">
+        <ul>
+            <li><a href="Typography.htm">Typography</a></li>
+            <li><a href="Buttons.htm">Buttons & Icons</a></li>
+            <li><a href="Containers.htm">Containers</a></li>
+            <li><a href="Components.htm" class="list-top-on">Components</a></li>
+            <li><a href="Layout.htm">Layouts & grids</a></li>
+            <li><a href="/Examples/TorrentDetails.htm">Examples</a></li>
+        </ul>
+    </nav>
+    <div class="list-top-fixed-spacer"></div>
+    <div class="box responsive-box">
+        <div class="p-10">
+            <h1>Components</h1>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Pagination</h2>
+            </div>
+            <div class="mt-10">
+                <ul class="list-inline list-pager mb-5">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+                <ul class="list-inline list-pager list-pager-blue">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Breadcrumbs</h2>
+            </div>
+            <div class="breadcrumb breadcrumb-collapsable mt-10">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                </ul>
+                <div class="float-clear"></div>
+            </div>
+            <div class="breadcrumb mt-10">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li class="active">Data</li>
+                </ul>
+                <div class="float-clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Inputs</h2>
+            </div>
+            <h3>Texboxes</h3>
+            <div class="mt-10">
+                <input type="email" class="form-inputs mb-5 width-100" placeholder="Enter email" />
+                <input type="password" class="form-inputs width-100" placeholder="Password" />
+            </div>
+            <h3>Textbox group</h3>
+            <div class="input-group mt-10">
+                <input type="text" class="form-inputs float-left" placeholder="Search..." />
+                <input type="submit" value="Submit" class="button button-blue button-big" />
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Popup</h2>
+            </div>
+            <input type="button" class="button button-blue mt-10" onclick="$('#box-popup-default').addClass('box-show');" value="Show box" />
+            <div id="box-popup-default" class="box-popup">
+                <div class="box-popup-content bg-white">
+                    <div class="p-10">
+                        <div class="header">
+                            <input type="button" value="×" onclick="$('#box-popup-default').removeClass('box-show');" class="close" />
+                            <h4>Title</h4>
+                        </div>
+                        <div class="p-10">
+                            Default box popup
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <input type="button" class="button button-red mt-10" onclick="$('#box-popup-alert').addClass('box-show');" value="Show alert box" />
+            <div id="box-popup-alert" class="box-popup">
+                <div class="box-popup-content bg-white">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <input type="button" value="×" onclick="$('#box-popup-alert').removeClass('box-show');" class="close" />
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content<input type="button" class="button button-red float-right" value="Oh no!!" />
+                            <div class="float-clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <input type="button" class="button button-green mt-10" onclick="$('#box-popup-success').addClass('box-show');" value="Show success box" />
+            <div id="box-popup-success" class="box-popup">
+                <div class="box-popup-content bg-white">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <input type="button" value="×" onclick="$('#box-popup-success').removeClass('box-show');" class="close" />
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content<input type="button" class="button button-green float-right" value="Yea!!" />
+                            <div class="float-clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Dropdown</h2>
+            </div>
+            <a class="dropdown-close" style="line-height: 30px" href="#" data-dropdown="#dropdown-filter">Open dropdown
+            </a>
+            <div id="dropdown-filter" class="dropdown dropdown-tip">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Responsive list</h2>
+            </div>
+            <div class="responsive-list">
+                <div class="hide mt-5">
+                    <a href="#" class="button button-blue" data-dropdown="#dropdown">
+                        <div class="glyphicon glyphicon-list font-12 mtb-5"></div>
+                        Responsive list
+                    </a>
+                    <div id="dropdown" class="dropdown dropdown-tip">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#" class="dropdown-on">Series</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Applications</a></li>
+                            <li><a href="#">Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="list-inline list-inline-blue mt-10">
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#" class="list-blue-on">Series</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Socail media components</h2>
+            </div>
+            <a href="Social.htm" class="mt-10 display-block">Full list</a>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Special menu</h2>
+            </div>
+            <div class="mt-10">
+                <ul class="box float-left menu-color" style="width: 150px;">
+                    <li><a href="#" class="menu-li-red on">Red</a></li>
+                    <li><a href="#" class="menu-li-blue">Blue</a></li>
+                    <li><a href="#" class="menu-li-green">Green</a></li>
+                    <li><a href="#" class="menu-li-orange">Orange</a></li>
+                </ul>
+                <div class="responsive-box ml-10 float-left">
+                    <ul class="box menu-pad list-blue" style="width: 150px;">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#" class="menu-pad-on">Animation</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Crime</a></li>
+                        <li><a href="#">Disaster</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="float-clear"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>TL Style Doc - Profile Example</title>
+
+    <!-- Metatags -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Links -->
+    <link href="../Styles/reset.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/auth-buttons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/icons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/main.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/normalize.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/responsive.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/meanmenu.css" rel="stylesheet" type="text/css" />    
+    <link href="../Styles/Minified/jquery-dropdown.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="" src="../Plugins/All/minified-all.js"></script>
+</head>
+<body class="bg-square site-left">
+    <nav id="main-menu" class="list-top fixed">
+        <ul>
+            <li><a href="/Typography.htm">Typography</a></li>
+            <li><a href="/Buttons.htm">Buttons & Icons</a></li>
+            <li><a href="/Containers.htm">Containers</a></li>
+            <li><a href="/Components.htm">Components</a></li>
+            <li><a href="/Layout.htm">Layouts & grids</a></li>
+            <li><a href="/Examples/TorrentDetails.htm" class="list-top-on">Examples</a></li>
+        </ul>
+    </nav>
+    <div class="list-top-fixed-spacer"></div>
+    <div class="responsive-list box  bg-blue">
+        <div class="hide p-5">
+            <a class="display-block color-white" href="#" data-dropdown="#dropdown-submenu" style="padding: 2px 3px;">Sub menu</a>
+            <div id="dropdown-submenu" class="dropdown dropdown-tip">
+                <ul class="dropdown-menu">
+                    <li><a href="TorrentDetails.htm" class="color-white no-deco">Torrent details</a></li>
+                    <li><a href="Search.htm" class="color-white no-deco">Search</a></li>
+                    <li><a href="Media.htm" class="color-white no-deco">Media</a></li>
+                    <li><a href="MediaDetails.htm" class="color-white no-deco">Media details</a></li>
+                    <li><a href="Register.htm" class="color-white no-deco">Register</a></li>
+                    <li><a href="Profile.htm" class="color-white">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="sub-menu" class="list-inline pl-10 bg-blue border-black no-border-t" style="overflow: hidden">
+            <ul>
+                <li><a href="TorrentDetails.htm" class="color-white no-deco">Torrent details</a></li>
+                <li><a href="Search.htm" class="color-white no-deco">Search</a></li>
+                <li><a href="Media.htm" class="color-white no-deco">Media</a></li>
+                <li><a href="MediaDetails.htm" class="color-white no-deco">Media details</a></li>
+                <li><a href="Register.htm" class="color-white no-deco">Register</a></li>
+                <li><a href="Profile.htm" class="color-white">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="responsive-box">
+        <div class="responsive-list box">
+            <div class="hide">
+                <input type="button" class="button button-blue m-5" data-dropdown="#dropdown-account" style="padding: 2px 3px;" value="Account settings" />
+                <div id="dropdown-account" class="dropdown dropdown-tip">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Edit personal information</a></li>
+                        <li><a href="#" class="list-blue-on">Change profile picture</a></li>
+                        <li><a href="#">Change background image</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="list-inline ml-10 list-inline-blue" style="height: 29px;">
+                <li><a href="#">Edit personal information</a></li>
+                <li><a href="#" class="list-blue-on">Change profile picture</a></li>
+                <li><a href="#">Change background image</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div class="box responsive-box mt-10">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img alt="" src="../Images/charles_darwin.jpg" class="width-100" /></td>
+                        <td class="v-align-top">
+                            <div class="p-10" style="max-width: 700px">
+                                <div class="header">
+                                    <h1>DontCryCuzBad</h1>
+                                </div>
+                                <p class="mt-10">Today, I am watching alot of movies for free. Cuz I feal like I need some time to myself. Oh yea I will seed like a pro don't worry :D</p>
+                                <table class="table-light mt-10">
+                                    <tr>
+                                        <th>Registered</th>
+                                        <th>Last login date</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1 month ago</td>
+                                        <td>1 day ago</td>
+                                    </tr>
+                                </table>
+                                <h2 class="font-18 mt-10">About</h2>
+                                <p class="mt-10">I don't work. I am a lonely guy that watch at least 10 movies per day. That's about it.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <nav class="box responsive-box mt-10">
+            <div class="responsive-list">
+                <div class="hide">
+                    <input type="button" class="button button-blue m-5" data-dropdown="#dropdown" style="padding: 2px 3px;" value="List: Comments" />
+                    <div id="dropdown" class="dropdown dropdown-tip">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Torrents</a></li>
+                            <li><a href="#" class="list-blue-on">Comments</a></li>
+                            <li><a href="#">Friends</a></li>
+                            <li><a href="#">Achievements & reputations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="list-inline ml-10 list-inline-blue" style="height: 29px;">
+                    <li><a href="#">Torrents</a></li>
+                    <li><a href="#" class="list-blue-on">Comments</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Achievements & reputations</a></li>
+                </ul>
+            </div>
+            <div id="dropdown-filter" class="dropdown dropdown-anchor-right dropdown-tip" style="overflow: hidden">
+                <a href="#" data-dropdown="#dropdown-filter">Filter by (Seeds)
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#1">Seeds</a></li>
+                    <li><a href="#2">Leechs</a></li>
+                    <li><a href="#3">Downloads</a></li>
+                    <li><a href="#4">Size</a></li>
+                </ul>
+            </div>
+            <div class="float-clear"></div>
+        </nav>
+        <div class="box responsive-box mt-10 p-10">
+            <h2 class="font-22 pb-10">Comments</h2>
+            <table class="table-normal">
+                <tr>
+                    <td>
+                        <img alt="" src="../Images/charles_darwin.jpg" height="40" class="img-box-contour float-left" />
+                        <div style="margin-left: 50px">
+                            <span class="font-bold">2 months ago</span>
+                            <p>I love this site! It is trully a great tool. asdf asdf asdf asdfb kjasbd fjh bakjsdfb jhabshkdjb hkjasbdf hjabskjhfd hkjasjhdfb hkjasdfhj b</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="" src="../Images/charles_darwin.jpg" height="40" class="img-box-contour float-left" />
+                        <div style="margin-left: 50px">
+                            <span class="font-bold">2 months ago</span>
+                            <p>If you want to watch the released movies. Go to this page and look with your eyes carefully. Don't be such an ass okay. You better be strong in life. Ohh wait another thing. Get your pants off your brain bitch you don't need to bo cruel! You shall die in hell and stay there for the rest of the ethernity. I guess it's pettry obvious that this is GOING to happen.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="" src="../Images/charles_darwin.jpg" height="40" class="img-box-contour float-left" />
+                        <div style="margin-left: 50px">
+                            <span class="font-bold">2 months ago</span>
+                            <p>Hey look an eagle.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="" src="../Images/charles_darwin.jpg" height="40" class="img-box-contour float-left" />
+                        <div style="margin-left: 50px">
+                            <span class="font-bold">2 months ago</span>
+                            <p>This is actually a nice comment bar. Hmm, I like it!</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

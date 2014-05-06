@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>TL Style Doc - Torrent Details Example</title>
+
+    <!-- Metatags -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Links -->
+    <link href="../Styles/reset.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/auth-buttons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/icons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/main.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/normalize.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/responsive.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/meanmenu.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Minified/jquery-dropdown.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="" src="../Plugins/All/minified-all.js"></script>
+</head>
+<body class="bg-square site-left">
+    <!-- Scripts -->
+    <!-- Facemarde -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '554868701231100',
+                status: true,
+                xfbml: true
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Twitter -->
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+    <nav class="list-top fixed">
+        <ul>
+            <li><a href="Typography.htm">Typography</a></li>
+            <li><a href="Buttons.htm">Buttons & Icons</a></li>
+            <li><a href="Containers.htm">Containers</a></li>
+            <li><a href="Components.htm" class="list-top-on">Components</a></li>
+            <li><a href="Layout.htm">Layouts & grids</a></li>
+            <li><a href="/Examples/TorrentDetails.htm">Examples</a></li>
+        </ul>
+    </nav>
+    <div class="list-top-fixed-spacer"></div>
+    <div class="box responsive-box">
+        <div class="p-10">
+            <div class="header">
+                <h1>Social</h1>
+            </div>
+            <table class="table-normal width-100 table-header-left mt-10">
+                <tr>
+                    <th>Social name</th>
+                    <th>Type</th>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>Like / Share / Facepile</td>
+                </tr>
+                <tr>
+                    <td>Twitter</td>
+                    <td>Tweet / Follow</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>TorrentLookup.com - Examples</h2>
+            </div>
+            <div class="mt-10">
+                <h3>Facebook</h3>
+                <div class="p-10">
+                    <div class="fb-like" data-href="https://www.facebook.com/torrentlookup" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                    <div class="fb-follow" data-href="https://www.facebook.com/torrentlookup" data-colorscheme="light" data-layout="box_count" data-show-faces="false"></div>
+                    <div class="fb-like-box" data-href="http://www.facebook.com/torrentlookup" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
+                    <div class="fb-facepile" data-app-id="554868701231100" data-href="http://facebook.com/torrentlookup" data-max-rows="1" data-colorscheme="light" data-size="medium" data-show-count="true"></div>
+                </div>
+                <h3>Twitter</h3>
+                <div class="p-10">
+                    <a href="https://twitter.com/torrentlookup" class="twitter-share-button" data-url="http://www.torrentlookup.com" data-counturl="torrentlookup" data-lang="en" data-count="vertical">Tweet</a>
+                    <a href="https://twitter.com/torrentlookup" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @torrentlookup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

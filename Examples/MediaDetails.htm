@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>TL Style Doc - Media Details Example</title>
+
+    <!-- Metatags -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Links -->
+    <link href="../Styles/reset.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/auth-buttons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/icons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/main.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/normalize.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/responsive.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/meanmenu.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Minified/jquery-dropdown.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="" src="../Plugins/All/minified-all.js"></script>
+</head>
+<body class="bg-square site-left">
+    <nav id="main-menu" class="list-top fixed">
+        <ul>
+            <li><a href="/Typography.htm">Typography</a></li>
+            <li><a href="/Buttons.htm">Buttons & Icons</a></li>
+            <li><a href="/Containers.htm">Containers</a></li>
+            <li><a href="/Components.htm">Components</a></li>
+            <li><a href="/Layout.htm">Layouts & grids</a></li>
+            <li><a href="/Examples/TorrentDetails.htm" class="list-top-on">Examples</a></li>
+        </ul>
+    </nav>
+    <div class="list-top-fixed-spacer"></div>
+    <!--    <div class="responsive-list box bg-blue">
+        <div class="hide p-5">
+            <a class="display-block color-white" href="#" data-dropdown="#dropdown-submenu" style="padding: 2px 3px;">Sub menu</a>
+            <div id="dropdown-submenu" class="dropdown dropdown-tip">
+                <ul class="dropdown-menu">
+                    <li><a href="TorrentDetails.htm" class="color-white no-deco">Torrent details</a></li>
+                    <li><a href="Search.htm" class="color-white no-deco">Search</a></li>
+                    <li><a href="Media.htm" class="color-white no-deco">Media</a></li>
+                    <li><a href="MediaDetails.htm" class="color-white">Media details</a></li>
+                    <li><a href="Register.htm" class="color-white no-deco">Register</a></li>
+                    <li><a href="Profile.htm" class="color-white no-deco">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="sub-menu" class="list-inline pl-10 bg-blue border-black no-border-t" style="overflow: hidden">
+            <ul>
+                <li><a href="TorrentDetails.htm" class="color-white no-deco">Torrent details</a></li>
+                <li><a href="Search.htm" class="color-white no-deco">Search</a></li>
+                <li><a href="Media.htm" class="color-white no-deco">Media</a></li>
+                <li><a href="MediaDetails.htm" class="color-white">Media details</a></li>
+                <li><a href="Register.htm" class="color-white no-deco">Register</a></li>
+                <li><a href="Profile.htm" class="color-white no-deco">Profile</a></li>
+            </ul>
+        </nav>
+    </div>-->
+    <div>
+        <style>
+            .backdrop {
+                position: absolute;
+                top: 30px;
+                left: 0;
+                z-index: -100;
+                height: 100%;
+                overflow: hidden;
+                width: 100%;
+                background-image: url(http://image.tmdb.org/t/p/original/lxwPthqCYWIr9C57W26lcbjctJZ.jpg);               
+                opacity:0.6;
+                background-position-x:500px;
+
+            }
+
+            .FadeAway {
+                position: absolute;
+                z-index: -99;
+                top: 30px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                background: linear-gradient(top, rgba( 255, 255, 255, 255 ) 0%, rgba( 0, 0, 0, 1 ) 100% );
+                background: -moz-linear-gradient(top, rgba( 255, 255, 255, 0) 0%, rgba( 0, 0, 0, 1 ) 100% );
+                background: -ms-linear-gradient(top, rgba( 255, 255, 255, 0 ) 0%, rgba( 0, 0, 0, 1 ) 100% );
+                background: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 0, 0, 0, 1 ) 100% );
+                background: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 16, 16, 16, 1 ) 100% );
+                -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#ffffffff);
+
+            }
+
+            .list-top {
+            
+            /*-moz-box-shadow: 0 0 5px 5px #151515;
+-webkit-box-shadow: 0 0 5px 5px#151515;*/
+/*box-shadow: 0 0 20px 5px #151515;*/
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+            }
+
+            .box {
+                background-color: rgb(250,250,250);
+                border: thin solid black;
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+            }
+
+            body {
+                background: none !important;
+                background-color: rgba(16, 16, 16, 1) !important;
+            }
+        </style>
+        <div class="backdrop">
+        </div>
+        <div class="FadeAway"></div>
+    </div>
+    <div class="responsive-box bg-gray border-dark-gray" style="margin-top: 10px; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);">
+        <div class="p-10">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="http://img34.imageshack.us/img34/2553/f0ed.jpg" class="img-shadow-contour width-100" style="min-width: 150px;" />
+                        </td>
+                        <td class="v-align-top">
+                            <div class="pl-10" style="max-width: 730px">
+                                <div class="header">
+                                    <h1>V for Vendetta</h1>
+                                </div>
+                                <div class="p-10">
+                                    <div>Action, Fantasy, Thriller</div>
+                                    <div id="stars-container" class="mt-5">
+                                        <div class="stars-template">
+                                            <div class="current-rating" style="width: 71% !important"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input title="Download .torrent file" type="button" class="button button-blue" value="Download" />&nbsp;
+                                    <input title="Magnet link" type="button" class="button button-green" value="Magnet Link" />
+                                </div>
+                                <h2>Plot</h2>
+                                <p class="ml-10">
+                                    In a world in which Great Britain has become a fascist state, a masked vigilante known only as "V" conducts guerrilla warfare against the oppressive British government. When "V" rescues a young woman from the secret police, he finds in her an ally with whom he can continue his fight to free the people of Britain.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <ul class="list-inline list-inline-blue p-5 responsive-list" style="height: 23px">
+            <li><a href="#" class="list-blue-on">All (80)</a></li>
+            <li><a href="#">HDRip (4)</a></li>
+            <li><a href="#">DVDRip (6)</a></li>
+            <li><a href="#">Screener (2)</a></li>
+            <li><a href="#">Unknown (23)</a></li>
+        </ul>
+    </div>
+    <div class="box responsive-box mt-5">
+        <div class="p-10">
+            <table class="table-normal table-header-left width-100 table-align-middle">
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Seeds</th>
+                        <th>Leechs</th>
+                        <th>Size</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <a href="#">V For Vendetta </a>
+                            </div>
+                        </td>
+                        <td class="color-green">123</td>
+                        <td class="color-red">543</td>
+                        <td class="color-gray">708.19 MB</td>
+                        <td style="width: 60px;">
+                            <a href="#" class="button button-blue display-block float-right ml-5">
+                                <div class="glyphicon glyphicon-save font-12"></div>
+                            </a>
+                            <a href="#" class="button button-green display-block float-right">
+                                <div class="glyphicon glyphicon-magnet font-12"></div>
+                            </a>
+                            <div class="float-clear"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <a href="#">V For Vendetta (1080p)</a>
+                            </div>
+                        </td>
+                        <td class="color-green">12</td>
+                        <td class="color-red">34</td>
+                        <td class="color-gray">1.6 GB</td>
+                        <td style="width: 60px;">
+                            <a href="#" class="button button-blue display-block float-right ml-5">
+                                <div class="glyphicon glyphicon-save font-12"></div>
+                            </a>
+                            <a href="#" class="button button-green display-block float-right">
+                                <div class="glyphicon glyphicon-magnet font-12"></div>
+                            </a>
+                            <div class="float-clear"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Trailers</h2>
+            </div>
+            <div style="width: 100px" class="pt-10 float-left mr-10">
+                <img src="http://i1.ytimg.com/vi/ZR5xUl2Suew/default.jpg" width="100" class="img-shadow-contour" alt="" />
+                <p class="text-center">
+                    Trailer 1 <a href="#" title="Trailer 2" onclick="$('#box-trailer-1').addClass('box-show');">Play</a>
+                </p>
+            </div>
+            <div style="width: 100px" class="pt-10 float-left mr-10">
+                <img src="http://i1.ytimg.com/vi/ZR5xUl2Suew/default.jpg" width="100" class="img-shadow-contour" alt="" />
+                <p class="text-center">
+                    Trailer 2 <a href="#" title="Trailer 2" onclick="$('#box-trailer-1').addClass('box-show');">Play</a>
+                </p>
+            </div>
+            <div class="float-clear"></div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Cast</h2>
+            </div>
+            <table class="width-100">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="p-5">
+                                <img src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w45/cWHfFaRj82mkl1Hqi2qrZn3VqEi.jpg" class="img-box-contour float-left" width="45" height="69" />
+                                <div class="p-5 float-left">
+                                    <a href="/media/person/natalie-portman/FK/">Natalie Portman</a><br />
+                                    as Evey Hammond
+                                </div>
+                                <div class="float-clear"></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="p-5">
+
+                                <img src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w45/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg" class="img-box-contour float-left" width="45" height="69" />
+                                <div class="p-5 float-left">
+                                    <a href="/media/person/hugo-weaving/UC/">Hugo Weaving</a><br />
+                                    as V / William Rookwood
+                                </div>
+                                <div class="float-clear"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="p-5">
+                                <img src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w45/cWHfFaRj82mkl1Hqi2qrZn3VqEi.jpg" class="img-box-contour float-left" width="45" height="69" />
+                                <div class="p-5 float-left">
+                                    <a href="/media/person/natalie-portman/FK/">Natalie Portman</a><br />
+                                    as Evey Hammond
+                                </div>
+                                <div class="float-clear"></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="p-5">
+
+                                <img src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w45/ysED1kp94bpnweNVaDoVQQ6iy8X.jpg" class="img-box-contour float-left" width="45" height="69" />
+                                <div class="p-5 float-left">
+                                    <a href="/media/person/hugo-weaving/UC/">Hugo Weaving</a><br />
+                                    as V / William Rookwood
+                                </div>
+                                <div class="float-clear"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Similar movies</h2>
+            </div>
+            <table class="table-float">
+                <tbody>
+                    <tr>
+                        <td><a href="#" title="Brooklyn">
+                            <img alt="" class="img-shadow-contour" src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185/jKSBk0LtZgXxG56uvwiAtYf6ttF.jpg" width="125" height="188" /></a></td>
+                        <td><a href="#" title="Hard Target">
+                            <img alt="" class="img-shadow-contour" src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185/g08ZhBaBSxEAqS8lPHlPvv2OuVU.jpg" width="125" height="188" /></a></td>
+                        <td><a href="#" title="The Naked City">
+                            <img alt="" class="img-shadow-contour" src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185/z69OKkSMPaJJyd6Rcgi2hpJm7B6.jpg" width="125" height="188" /></a></td>
+                        <td><a href="#" title="Houdini">
+                            <img alt="" class="img-shadow-contour" src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185/4mKD0W8mLnEYHcyWYn7OQzAHojs.jpg" width="125" height="188" /></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div>
+                <table class="table-light table-header-left width-100">
+                    <thead>
+                        <tr>
+                            <th>Released date
+                            </th>
+                            <th>Length
+                            </th>
+                            <th>Budget
+                            </th>
+                            <th>Revenue
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3/16/2006
+                            </td>
+                            <td>132m
+                            </td>
+                            <td>$54,000,000.00
+                            </td>
+                            <td>$132,511,035.00
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="box-trailer-1" class="box-popup">
+        <div class="box-popup-content">
+            <div class="p-10">
+                <div class="header">
+                    <input type="button" value="×" onclick="$('#box-trailer-1').removeClass('box-show');" class="close" />
+                    <h4>Trailer 1</h4>
+                </div>
+                <div class="pt-10">
+                    <object id="trailer-video">
+                        <param name="movie" value="https://www.youtube.com/v/ZR5xUl2Suew?autoplay=1&version=3"></param>
+                        <param name="allowFullScreen" value="true"></param>
+                        <param name="allowScriptAccess" value="always"></param>
+                        <embed src="https://www.youtube.com/v/ZR5xUl2Suew?autoplay=1&version=3" class="width-100" height="350" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed>
+                    </object>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+</body>
+</html>

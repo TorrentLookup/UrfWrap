@@ -1,0 +1,31 @@
+@media screen and (max-width:1460px){.site-left.site-max-1400{margin-left:0;}
+.site-left.site-max-1400 .fixed > ul, .site-left.site-max-1400 .full-width > div, .site-left.site-max-1400 .full-width > ul, .site-left.site-max-1400 .full-width > nav{margin-left:0;}
+.site-left.site-max-1400 .list-top{padding-left:10px;}
+}
+@media screen and (max-width:1410px){.site-max-1400.site-col-2 > #content > div:nth-of-type(1), .site-max-1400.site-col-2 > #content > div:nth-of-type(2){float:none !important;max-width:100% !important;width:100% !important;margin:0 !important;}
+.site-max-1400.site-col-2 > #content .responsive-box, .site-max-1400.site-col-2 > #content .responsive-list{margin:0 !important;border-top:none;border-right:none;border-left:none;}
+}
+@media screen and (max-width:1260px){.site-left.site-max-1200{margin-left:0;}
+.site-left.site-max-1200 .fixed > ul, .site-left.site-max-1200 .full-width > div, .site-left.site-max-1200 .full-width > ul, .site-left.site-max-1200 .full-width > nav{margin-left:0;}
+.site-left.site-max-1200 .list-top{padding-left:10px;}
+}
+@media screen and (max-width:1210px){.site-max-1200.site-col-2 > #content > div:nth-of-type(1), .site-max-1200.site-col-2 > #content > div:nth-of-type(2){float:none !important;max-width:100% !important;width:100% !important;margin:0 !important;}
+.site-max-1200.site-col-2 > #content .responsive-box, .site-max-1200.site-col-2 > #content .responsive-list{margin:0 !important;border-top:none;border-right:none;border-left:none;}
+}
+@media screen and (max-width:1010px){.site-left{margin-left:0;}
+.site-left .fixed > ul, .site-left .full-width > div, .site-left .full-width > ul, .site-left .full-width > nav{margin-left:0;}
+.site-left .list-top{padding-left:10px;}
+}
+@media screen and (max-width:960px){.site-col-2 > #content > div:nth-of-type(1), .site-col-2 > #content > div:nth-of-type(2){float:none !important;max-width:100% !important;width:100% !important;margin:0 !important;}
+.responsive-box, .responsive-list{margin:0 !important;border-top:none;border-right:none;border-left:none;}
+.full-width{position:inherit;}
+}
+@media screen and (max-width:630px){.responsive-list > ul, .responsive-list > nav{display:none;}
+.responsive-list > div{display:block;}
+.box-popup-content{margin:inherit !important;width:100% !important;}
+.list-top-fixed-spacer{height:0;}
+a{word-break:break-all;}
+.breadcrumb-collapsable{height:auto;}
+.breadcrumb-collapsable > ul > li + li:before{content:'>\0000a0';padding:0;}
+.breadcrumb-collapsable ul li{float:none;}
+}

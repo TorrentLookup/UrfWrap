@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>TL Style Doc - Torrent Details Example</title>
+
+    <!-- Metatags -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Links -->
+    <link href="../Styles/reset.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/auth-buttons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/icons.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/main.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/normalize.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/responsive.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Minified/meanmenu.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Minified/jquery-dropdown.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="" src="../Plugins/All/minified-all.js"></script>
+</head>
+<body class="bg-square site-left">
+    <nav class="list-top fixed">
+        <ul>
+            <li><a href="Typography.htm">Typography</a></li>
+            <li><a href="Buttons.htm">Buttons & Icons</a></li>
+            <li><a href="Containers.htm" class="list-top-on">Containers</a></li>
+            <li><a href="Components.htm">Components</a></li>
+            <li><a href="Layout.htm">Layouts & grids</a></li>
+            <li><a href="/Examples/TorrentDetails.htm">Examples</a></li>
+        </ul>
+    </nav>
+    <div class="list-top-fixed-spacer"></div>
+    <div class="box responsive-box">
+        <div class="p-10">
+            <h1>Containers</h1>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Boxes</h2>
+            </div>
+            <div>
+                <div class="box p-10 mt-10">
+                    This is a normal box.
+                </div>
+                <div class="box box-blue p-10 mt-10">
+                    This is a blue box.
+                </div>
+                <div class="box box-red p-10 mt-10">
+                    This is a red box.
+                </div>
+                <div class="box box-orange p-10 mt-10">
+                    This is a orange box.
+                </div>
+                <div class="box box-green p-10 mt-10">
+                    This is a green box.               
+                    <button type="button" class="close" onclick="$(this).parent().hide( 'blind', { direction: 'up' }, 'fast' );">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Panels</h2>
+            </div>
+            <div class="panel panel-blue mt-10">
+                <div class="panel-heading">
+                    <button type="button" class="close" onclick="$(this).parent().parent().hide( 'blind', { direction: 'up' }, 'fast' );">×</button>
+
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-red mt-10">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-green mt-10">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-orange mt-10">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box responsive-box mt-10">
+        <div class="p-10">
+            <div class="header">
+                <h2>Indicators</h2>
+            </div>
+            <div class="box-red p-10">
+                <button type="button" class="close" onclick="$(this).parent().hide( 'blind', { direction: 'up' }, 'fast' );">×</button>
+                <h4>Warning!</h4>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+            </div>
+            <div class="box-blue p-10 mt-10">
+                <button type="button" class="close" onclick="$(this).parent().hide( 'blind', { direction: 'up' }, 'fast' );">×</button>
+                <h4>Info!</h4>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+            </div>
+            <div class="box-green p-10 mt-10">
+                <button type="button" class="close" onclick="$(this).parent().hide( 'blind', { direction: 'up' }, 'fast' );">×</button>
+                <h4>Success!</h4>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+            </div>
+            <div class="box-orange p-10 mt-10">
+                <button type="button" class="close" onclick="$(this).parent().hide( 'blind', { direction: 'up' }, 'fast' );">×</button>
+                <h4>Warning!</h4>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
